@@ -1,0 +1,137 @@
+.sample-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/* replaced */
+/* .sample-page__title {
+    font-size: 48px;
+    color: forestgreen;
+} */
+
+/* donut scope */
+@scope (.sample-page) to (.first-section) {
+    h1 {
+        font-size: 48px;
+        color: forestgreen;
+    }
+}
+
+/* replaced
+.sample-page__first-section {
+    font-size: 24px;
+    border: solid;
+    padding: 40px;
+    margin: 20px;
+}
+
+.sample-page__first-section--first_line {
+    font-size: 24px;
+    background-color: forestgreen;
+    color: pink;
+    text-align: center;
+    padding: 10px;
+}
+
+.sample-page__first-section--second-line {
+    font-size: 24px;
+    background-color: forestgreen;
+    color: pink;
+    text-align: center;
+    padding: 10px;
+}
+
+.sample-page__first-section--second-line-link {
+    color: red;
+    font-size: 28px;
+    text-transform: uppercase;
+} */
+
+.first-section {
+    font-size: 24px;
+    border: solid;
+    padding: 40px;
+    margin: 20px;
+}
+
+/* donut scope */
+@scope (.sample-page) to (.second-section) {
+    p {
+        font-size: 24px;
+        background-color: forestgreen;
+        color: pink;
+        text-align: center;
+        padding: 10px;
+    }
+    a {
+        color: red;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+}
+
+/* replaced
+.sample-page__second-section {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    padding: 40px;
+    margin: 20px;
+}
+
+.sample-page__second-section--title {
+    text-align: center;
+}
+
+.sample-page__second-section--div {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.sample-page__second-section--div-paragraph {
+    max-width: 200px;
+    text-align: center;
+    background-color: pink;
+    color: forestgreen;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+.sample-page__second-section--image {
+    max-width: 400px;
+    max-height: 100%;
+} */
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    padding: 40px;
+    margin: 20px;
+}
+@scope (.second-section) {
+    h2 {
+        text-align: center;
+    }
+    img {
+        max-width: 400px;
+        max-height: 100%;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+    p {
+        max-width: 200px;
+        text-align: center;
+        background-color: pink;
+        color: forestgreen;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 24px;
+    }
+}

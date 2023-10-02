@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>With Scope</title>
+        <style>
+            .light {
+                background: #ccc;
+            }
+            .dark {
+                background: #333;
+            }
+
+            div {
+                padding: 2rem;
+            }
+            div > div {
+                margin: 0 0 0 2rem;
+            }
+            p {
+                margin: 0 0 2rem 0;
+            }
+
+            @scope (.light) {
+                :scope {
+                    background: white;
+                }
+                a {
+                    color: red;
+                }
+            }
+
+            @scope (.dark) {
+                :scope {
+                    background: black;
+                }
+                a {
+                    color: yellow;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="light">
+            <p><a href="#">First Level</a></p>
+            <div class="dark">
+                <p><a href="#">Second Level</a></p>
+                <div class="light">
+                    <p><a href="#">Third Level</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

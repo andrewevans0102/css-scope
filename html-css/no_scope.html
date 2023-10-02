@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>No Scope</title>
+        <style>
+            .light {
+                background: #ccc;
+            }
+            .dark {
+                background: #333;
+            }
+            .light a {
+                color: red;
+            }
+            .dark a {
+                color: yellow;
+            }
+
+            div {
+                padding: 2rem;
+            }
+            div > div {
+                margin: 0 0 0 2rem;
+            }
+            p {
+                margin: 0 0 2rem 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="light">
+            <p><a href="#">First Level</a></p>
+            <div class="dark">
+                <p><a href="#">Second Level</a></p>
+                <div class="light">
+                    <p><a href="#">Third Level</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

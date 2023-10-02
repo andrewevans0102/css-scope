@@ -1,0 +1,16 @@
+{
+    "name": "css-scope",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start-html": "http-server html-css",
+        "start-react": "cd react-example && npm install && npm run start"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "http-server": "^14.1.1"
+    }
+}

@@ -1,0 +1,72 @@
+.sample-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.sample-page__title {
+    font-size: 48px;
+    color: forestgreen;
+}
+
+.sample-page__first-section {
+    font-size: 24px;
+    border: solid;
+    padding: 40px;
+    margin: 20px;
+}
+
+.sample-page__first-section--first_line {
+    font-size: 24px;
+    background-color: forestgreen;
+    color: pink;
+    text-align: center;
+    padding: 10px;
+}
+
+.sample-page__first-section--second-line {
+    font-size: 24px;
+    background-color: forestgreen;
+    color: pink;
+    text-align: center;
+    padding: 10px;
+}
+
+.sample-page__first-section--second-line-link {
+    color: red;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.sample-page__second-section {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    padding: 40px;
+    margin: 20px;
+}
+
+.sample-page__second-section--title {
+    text-align: center;
+}
+
+.sample-page__second-section--div {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.sample-page__second-section--div-paragraph {
+    max-width: 200px;
+    text-align: center;
+    background-color: pink;
+    color: forestgreen;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+.sample-page__second-section--image {
+    max-width: 400px;
+    max-height: 100%;
+}
